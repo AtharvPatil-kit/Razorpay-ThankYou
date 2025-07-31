@@ -2,66 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thank You - Payment Successful</title>
-
-  <!-- Inter Font Import -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You!</title>
   <style>
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #111111;
+      background: linear-gradient(135deg, #000000, #1f1f1f);
+      color: #ffffff;
+      text-align: center;
+      padding: 50px 20px;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
-      text-align: center;
-      padding: 20px;
+      margin: 0;
     }
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #000000;
+      font-size: 3em;
+      color: #ffffff;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 1rem;
-      color: #333333;
-      margin-top: 8px;
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: #d1d5db;
     }
 
-    .ref {
-      margin-top: 20px;
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 500;
+    .button {
+      margin-top: 30px;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+      transition: transform 0.2s ease;
     }
 
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-
-      p, .ref {
-        font-size: 0.95rem;
-      }
+    .button:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <h1>Thank You!</h1>
+  <h1>🎉 Thank You!</h1>
   <p>Your payment was successful.</p>
-  <p class="ref">Transaction Ref: <strong>#RZP-TQ839B</strong></p>
+  <p>We appreciate your business!</p>
+  <button class="button" onclick="window.close()">Close Window 😍</button>
 </body>
 </html>
