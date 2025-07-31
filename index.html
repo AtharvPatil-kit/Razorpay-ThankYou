@@ -75,6 +75,21 @@
   <h1>🎉 Thank You! / धन्यवाद!</h1>
   <p>Your payment was successful.<br>तुमचे पेमेंट यशस्वीरित्या पूर्ण झाले आहे.</p>
   <p>We appreciate your business!<br>आपल्या व्यवसायासाठी आभार!</p>
-  <button class="button" onclick="window.close()">Close Window / विंडो बंद करा 😍</button>
+  
+  <button class="button" onclick="tryClose()">Close Window / विंडो बंद करा 😍</button>
+
+  <script>
+    function tryClose() {
+      try {
+        window.close();
+        // For browsers that ignore close
+        setTimeout(() => {
+          alert("You can now safely close the tab or go back.\nआपण आता टॅब बंद करू शकता किंवा मागे जाऊ शकता.");
+        }, 300);
+      } catch (e) {
+        alert("You can now safely close the tab or go back.\nआपण आता टॅब बंद करू शकता किंवा मागे जाऊ शकता.");
+      }
+    }
+  </script>
 </body>
 </html>
