@@ -18,7 +18,7 @@
       background: linear-gradient(135deg, #000000, #1f1f1f);
       color: #ffffff;
       text-align: center;
-      padding: 50px 20px;
+      padding: 30px 16px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -28,25 +28,26 @@
     }
 
     h1 {
-      font-size: 2.8em;
+      font-size: 1.8em;
       color: #ffffff;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     p {
-      font-size: 1.2em;
-      margin: 10px 0;
+      font-size: 0.95em;
+      margin: 6px 0;
       color: #d1d5db;
+      line-height: 1.4em;
     }
 
     .button {
-      margin-top: 30px;
+      margin-top: 20px;
       background-color: #ffffff;
       color: #000000;
-      padding: 12px 24px;
+      padding: 10px 20px;
       border: none;
-      border-radius: 8px;
-      font-size: 1em;
+      border-radius: 6px;
+      font-size: 0.95em;
       font-weight: bold;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
@@ -56,12 +57,24 @@
     .button:hover {
       transform: scale(1.05);
     }
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.2em;
+      }
+      p {
+        font-size: 1.05em;
+      }
+      .button {
+        font-size: 1em;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>🎉 Thank You! / धन्यवाद!</h1>
-  <p>Your payment was successful. <br>तुमचे पेमेंट यशस्वीरित्या पूर्ण झाले आहे.</p>
-  <p>We appreciate your business! <br>आपल्या व्यवसायासाठी आभार!</p>
+  <p>Your payment was successful.<br>तुमचे पेमेंट यशस्वीरित्या पूर्ण झाले आहे.</p>
+  <p>We appreciate your business!<br>आपल्या व्यवसायासाठी आभार!</p>
   <button class="button" onclick="window.close()">Close Window / विंडो बंद करा 😍</button>
 </body>
 </html>
